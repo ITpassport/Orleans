@@ -35,6 +35,14 @@ namespace OrleansWebAPI7AppDemo.Controllers
             return animal_1;
         }
 
+        [HttpPost]
+        public BankAccount TaskAccount ()
+        {
+            BankAccount account = new BankAccount("toma toma", 0);
+            account.Owner = "TomaToma";
+            return account;
+        }
+
         [HttpGet()]
         public IActionResult StatusCode()
         {
